@@ -31,7 +31,7 @@ function App() {
   const API_KEY = '2b6b152b025849dc9bc55706232809';
 
   const handleFetch = () => {
-    const url = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${input.toLowerCase()}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${input.toLowerCase()}&aqi=no`;
     return fetch(url)
       .then(response => {
         if (!response.ok) {
