@@ -1,0 +1,209 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+a {
+  color: rgb(11, 11, 53);
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+.input-div {
+  position: flex;
+}
+
+#search-logo {
+  position: absolute;
+  color: aliceblue;
+  box-sizing: border-box;
+  width: 35px;
+  padding-right: 10px;
+}
+
+#city-input {
+  border-style: none;
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: #fff;
+  margin-left: 35px;
+  outline: none;
+}
+
+#city-input:hover {
+  border-style: none;
+  border: none;
+  outline: none;
+}
+
+.horis-line {
+  width: 17em;
+  height: 0.3px;
+  background-color: white;
+}
+.button-div {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  background-color: rgb(11, 11, 53); /* Начальный цвет фона */
+
+  height: 100%;
+  width: 0;
+  transition: 0.3s ease-in-out;/* Анимация изменения ширины и цвета фона */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.button:hover::before {
+  width: 100%;
+  background-color: #fff; 
+}
+
+.button:hover {
+  color: rgb(11, 11, 53);
+  transition: width 0.3s ease-in-out;
+
+}
+.weather-card {
+  position: absolute;
+  right: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: rgb(11, 11, 53);
+}
+
+aside {
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100px;
+}
+
+.weather-body {
+  padding-top: 10px;
+  display: flex;
+}
+.span-div {
+    width: 140px;
+}
+
+.aside-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:right;
+}
+
+.wcard-header {
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+.icon {
+  width: 95px;
+  height: 100px;
+  padding-left: 25px;
+}
+
+.wcard-sign {
+  position: absolute;
+  right: 16px;
+  top: 90px;
+  font-size: 11px;
+  font-style: italic;
+  padding-left: 17px;
+}
+
+.horisontal-line {
+  width: 135px;
+}
+
+.list {
+  padding: 14px;
+  margin: 0px;
+  padding-top: 10px;
+}
+
+ul {
+  line-height: 30px;
+}
+
+li {
+  text-align: left;
+  padding-left: 8px;
+}
+.absolute-li {
+  width: 190px;
+
+}
+
+.goodbye-span {
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  bottom: 9px;
+  font-size: 10px;
+}
